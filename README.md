@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Maalomaty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![screencapture-maalomaty-vercel-app-2024-08-23-15_09_22](https://github.com/user-attachments/assets/5d1dfb2f-6ee8-4031-a6d6-ce8c8be37db9)
 
-Currently, two official plugins are available:
+**Maalomaty** is an information-driven web application designed to deliver essential data on your ID card in an organized and accessible manner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User-Friendly Interface:** Simple and intuitive design for seamless user experience.
+- **Responsive Design:** Optimized for various devices and screen sizes.
+- **Quick Access to Information:** Provides quick and reliable access to important information.
+- **Modern Web Technologies:** Built with the latest web development practices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**
+- **TypeScript**
+- **TailwindCSS**
+- **Vercel** for deployment
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to Use
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Navigate to the [Maalomaty website](https://maalomaty.vercel.app/).
+2. Search for your ID number.
+3. Enjoy a fast and responsive user experience.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Deployment
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The application is deployed using **Vercel**, ensuring high availability and fast load times.
+
+## Contributing
+
+If you'd like to contribute to Maalomaty, please fork the repository and submit a pull request. Any improvements or suggestions are welcome!
