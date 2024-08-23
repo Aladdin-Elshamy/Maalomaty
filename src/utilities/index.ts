@@ -16,7 +16,6 @@ export function extractInfoFromEgyptianID(idNumber: string): IdentityDetails {
     const month = parseInt(idNumber.slice(3, 5));
     const day = parseInt(idNumber.slice(5, 7));
 
-    // Convert month number to month name
     const monthNames = [
         "يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو",
         "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"
