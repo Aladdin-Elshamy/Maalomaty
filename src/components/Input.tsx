@@ -5,6 +5,8 @@ import ErrorMessage from "./ErrorMessage";
 import toast from "react-hot-toast";
 import { extractInfoFromEgyptianID } from "../utilities";
 import { IdentityDetails } from "../interfaces";
+import { FaCheck } from "react-icons/fa";
+
 interface IProps {
     setIdToParent: (idCardDetails: IdentityDetails) => void
 }
@@ -49,6 +51,7 @@ export default function Input({setIdToParent} : IProps) {
                 <input type="search" id="default-search" className="text-md sm:text-xl block w-full p-4 ps-16 pr-8 text-gray-900 rounded-lg bg-[#F3F3F3] dark:placeholder-[#B8B8B8] dark:text-black focus:outline-none  text-right" 
                 placeholder="رقم البطاقة ..." value={id} onChange={onChangeHandler}/>
                 <button type="submit" className="hidden sm:block text-white absolute end-2.5 bottom-2 bg-[#5982AB] hover:bg-blue-800 focus:ring-4 focus:outline-nonefont-medium rounded-full text-md sm:text-xl font-bold px-8 py-2">إبحث</button>
+                <button type="submit" className="block sm:hidden text-white absolute end-2.5 bottom-3.5 bg-[#5982AB] hover:bg-blue-800 focus:ring-4 focus:outline-nonefont-medium rounded-full text-xs font-bold px-2 py-2"><FaCheck /></button>
             </div>
             <ErrorMessage msg={errors}/>
         </form>
