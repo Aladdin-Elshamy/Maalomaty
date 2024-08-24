@@ -7,3 +7,15 @@ body {
   direction: rtl;
   font-family: "Baloo Bhaijaan 2", sans-serif;
 }
+#root {
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  main > div {
+    min-height: 93vh;
+  }
+
+}
+main > div {
+  min-height: 90vh;
+}
