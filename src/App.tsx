@@ -38,7 +38,7 @@ function App() {
           ) : (
             <div className='mt-1 pb-8'>
               <p className='text-sm text-[#406385] text-center'>دخل رقمك القومي و في لحظات هيتم عرض بيناتك</p>
-              <img src='./images/waiting-img.jpg' className='block max-h-52 md:max-h-64 lg:max-h-96 lg:mt-4 w-auto object-cover mx-auto' />
+              <img src='./images/waiting-img.jpg' className='block max-h-52 sm:max-h-64 md:max-h-72  lg:max-h-96 lg:mt-4 w-auto object-cover mx-auto' />
             </div>
           )}
         </div>
