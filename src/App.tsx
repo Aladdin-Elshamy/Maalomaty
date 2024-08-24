@@ -17,9 +17,9 @@ function App() {
     setIdDetails(idCardDetails)
   }
   return (
-    <div className='min-h-full'>
+    <>
       <main className='p-4 pb-0 sm:p-8 sm:pb-0'>
-        <div className='container bg-white rounded-t-3xl shadow-lg'>
+        <div className='container bg-white rounded-t-3xl shadow-lg min-h-[90vh]'>
           <img src='./images/Group.svg' alt='logo' className='block pt-9 mb-12 pl-2 sm:mb-4 mr-auto' />
           <Heading />
           <div className='mx-auto w-full max-w-3xl mt-10'>
@@ -49,7 +49,7 @@ function App() {
         </div>
       </footer>
       <Toaster />
-    </div>
+    </>
 
     
   )
